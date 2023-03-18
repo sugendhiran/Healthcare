@@ -1,0 +1,55 @@
+
+
+.nav-item:hover > a{
+    color: #375ec9;
+    color: 
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+}
+/* image overlay */
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #2d8da5;
+    opacity: 0.5;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.carousel-caption{
+    top: 40%;
+}
+
+.blue-container{
+    width: 100%;
+    background: #07425f;
+    color: #4072a4;
+    margin-top: -32px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+
+/* newsletter */
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .carousel-item {
+        height: 400px;
+        overflow: hidden;
+        background-size: cover;
+    }
+    #services{
+        text-align: center;
+    }
+}
